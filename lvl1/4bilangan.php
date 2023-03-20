@@ -1,27 +1,18 @@
-<!-- 1. Mulai
-2. Masukkan bilangan pertama (a)
-3. Masukkan bilangan kedua (b)
-4. Masukkan bilangan ketiga (c)
-5. Masukkan bilangan keempat (d)
-6. Jika a > b, a > c dan a > d, cetak a sebagai bilangan terbesar
-7. Jika b > a, b > c dan b > d, cetak b sebagai bilangan terbesar
-8. Jika c > a, c > b dan c > d, cetak c sebagai bilangan terbesar
-9. Jika d > a, d > b dan d > c, cetak d sebagai bilangan terbesar
-10. Selesai-->
+
 
 <?php
-$a = 6;
-$b = 9;
-$c = 1;
-$d = 8;
+$bilangan1 = $_POST['bilangan1'];
+$bilangan2 = $_POST['bilangan2'];
+$bilangan3 = $_POST['bilangan3'];
+$bilangan4 = $_POST['bilangan4'];
 
-if ($a > $b && $a > $c && $a > $d) {
-  echo "Bilangan terbesar adalah $a";
-} elseif ($b > $a && $b > $c && $b > $d) {
-  echo "Bilangan terbesar adalah $b";
-} elseif ($c > $a && $c > $b && $c > $d) {
-  echo "Bilangan terbesar adalah $c";
+if ($bilangan1 > $bilangan2 && $bilangan1 > $bilangan3 && $bilangan1 > $bilangan4) {
+  echo "Bilangan terbesar adalah $bilangan1";
+} elseif ($bilangan2 > $bilangan1 && $bilangan2 > $bilangan3 && $bilangan2 > $bilangan4) {
+  echo "Bilangan terbesar adalah $bilangan2";
+} elseif ($bilangan3 > $bilangan1 && $bilangan3 > $bilangan2 && $bilangan3 > $bilangan4) {
+  echo "Bilangan terbesar adalah $bilangan3";
 } else {
-  echo "Bilangan terbesar adalah $d";
+  echo "Bilangan terbesar adalah $bilangan4";
 }
 ?>

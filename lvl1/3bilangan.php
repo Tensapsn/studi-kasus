@@ -1,22 +1,15 @@
-<!-- 1. Mulai
-2. Masukkan bilangan pertama (a)
-3. Masukkan bilangan kedua (b)
-4. Masukkan bilangan ketiga (c)
-5. Jika a > b dan a > c, cetak a sebagai bilangan terbesar
-6. Jika b > a dan b > c, cetak b sebagai bilangan terbesar
-7. Jika c > a dan c > b, cetak c sebagai bilangan terbesar
-8. Selesai -->
 
 <?php
-$a = 7;
-$b = 5;
-$c = 2;
+$bilangan1 = $_POST['bilangan1'];
+$bilangan2 = $_POST['bilangan2'];
+$bilangan3 = $_POST['bilangan3'];
 
-if ($a > $b && $a > $c) {
-  echo "Bilangan terbesar adalah $a";
-} elseif ($b > $a && $b > $c) {
-  echo "Bilangan terbesar adalah $b";
+if ($bilangan1 > $bilangan2 && $bilangan1 > $bilangan3) {
+  echo "Bilangan terbesar adalah $bilangan1";
+} elseif ($bilangan2 > $bilangan1 && $bilangan2 > $bilangan3) {
+  echo "Bilangan terbesar adalah $bilangan2";
 } else {
-  echo "Bilangan terbesar adalah $c";
+  echo "Bilangan terbesar adalah $bilangan3";
 }
 ?>
+
