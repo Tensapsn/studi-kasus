@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="AsusROG"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-22 08:42:44 AM"/>
+        <attribute name="created" value="QXN1c1JPRztERVNLVE9QLVQyUFA4VUU7MjAyMy0wMi0yMjswODozODowMyBBTTsyOTk1"/>
+        <attribute name="edited" value="QXN1c1JPRztERVNLVE9QLVQyUFA4VUU7MjAyMy0wMi0yMjswODo0Mjo0NCBBTTsxOzMxMDM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, d" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <input variable="d"/>
+            <if expression="a &gt; b &amp;&amp; a &gt; c &amp;&amp; a &gt; d">
+                <then>
+                    <output expression="&quot;Bilangan Terbesar adalah &quot; &amp; a" newline="True"/>
+                </then>
+                <else>
+                    <if expression="b &gt; a   &amp;&amp; b &gt; c &amp;&amp; b &gt; d">
+                        <then>
+                            <output expression="&quot;Bilangan Terbesar adalah &quot; &amp; b" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="c &gt; a &amp;&amp; c &gt; b &amp;&amp; c &gt; d">
+                                <then>
+                                    <output expression="&quot;Bilangan Terbesar adalah &quot; &amp; c" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Bilangan Terbesar adalah &quot; &amp; d" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

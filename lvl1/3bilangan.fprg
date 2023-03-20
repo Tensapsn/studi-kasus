@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="AsusROG"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-22 08:37:54 AM"/>
+        <attribute name="created" value="QXN1c1JPRztERVNLVE9QLVQyUFA4VUU7MjAyMy0wMi0yMjswODozMzoxNyBBTTsyOTk1"/>
+        <attribute name="edited" value="QXN1c1JPRztERVNLVE9QLVQyUFA4VUU7MjAyMy0wMi0yMjswODozNzo1NCBBTTsyOzMxMDk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <if expression="a &gt; b &amp;&amp; a &gt; c">
+                <then>
+                    <output expression="&quot;Bilangan terbesar adalah &quot; &amp; a" newline="True"/>
+                    <breakpoint expression="" always="True"/>
+                </then>
+                <else>
+                    <if expression="b &gt; a &amp;&amp; b &gt; c">
+                        <then>
+                            <output expression="&quot;Bilangan Terbesar adalah &quot; &amp; b" newline="True"/>
+                            <breakpoint expression="" always="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Bilangan Terbesar adalah &quot; &amp; c" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
